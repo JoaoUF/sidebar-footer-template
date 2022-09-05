@@ -1,0 +1,7 @@
+@mixin side-bar-itmes {
+    display: flex;
+    flex-direction: row;
+    /* gap: ; */
+    justify-content: center;
+    align-items: center;
+}
