@@ -1,1 +1,37 @@
-@use '../abstracts/index' as *;
+@use '../base' as *;
+
+.sidebar{
+    width: 8.6vw;
+    height: 100vh;
+    background-color: map-get($map: $sidebar-colors, $key: body);
+
+    &__logo{
+        margin: 0;
+        
+
+        &__img{
+            
+        }
+
+        &__text{
+
+        }
+    }
+
+    &__line{
+
+    }
+
+    &__menu{
+
+        &__page{
+
+            &__img{
+
+            }
+            &__text{
+
+            }
+        }
+    }
+}

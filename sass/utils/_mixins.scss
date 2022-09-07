@@ -1,7 +1,4 @@
-@mixin side-bar-itmes {
+@mixin index-content {
     display: flex;
     flex-direction: row;
-    /* gap: ; */
-    justify-content: center;
-    align-items: center;
 }
