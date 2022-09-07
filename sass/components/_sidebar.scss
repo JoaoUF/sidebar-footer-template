@@ -1,4 +1,5 @@
 @use '../base' as *;
+@use '../utils' as *;
 
 .sidebar{
     width: 8.6vw;
@@ -6,23 +7,41 @@
     background-color: map-get($map: $sidebar-colors, $key: body);
 
     &__logo{
-        margin: 0;
+        margin: 0.6vw 0 0 0;
+        padding: 0 0.6vw;
+        width: 7.3vw;
+        height: 3.2vh;
+        @include sidebar-content(flex, row, center, center);
         
-
         &__img{
-            
+            height: 3.2vh;
         }
-
+        
         &__text{
-
+            height: min-content;
+            margin: 0;
+            padding: 0 0 0 0.4vw;
+            font-family: Seogoe UI;
+            font-size: 0.875rem;
+            font-weight: 800;
+            letter-spacing: 0.02rem;
+            align-self: center;
+            color: map-get($map: $sidebar-colors, $key: text);
         }
     }
 
     &__line{
-
+        width: 7.3vw;
+        height: 2px;
+        margin: 0.6vw 0.6vw;
+        border: none;
+        background-color: map-get($map: $sidebar-colors, $key: hover);
     }
 
     &__menu{
+        height: min-content;
+        margin: 0 0.6vw;
+        @include sidebar-content(flex, column, center, center);
 
         &__page{
 
@@ -30,7 +49,7 @@
 
             }
             &__text{
-
+                margin: 0;
             }
         }
     }

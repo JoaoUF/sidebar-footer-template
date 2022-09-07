@@ -2,3 +2,10 @@
     display: flex;
     flex-direction: row;
 }
+
+@mixin sidebar-content ($dis, $dir, $jsc, $alc){
+    display: $dis;
+    flex-direction: $dir;
+    justify-content: $jsc;
+    align-content: $alc;
+}
